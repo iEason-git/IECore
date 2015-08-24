@@ -15,6 +15,8 @@
 		BB3A6CF41B8AD73300333490 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB3A6CF21B8AD73300333490 /* LaunchScreen.xib */; };
 		BB3A6D121B8B296D00333490 /* UIView+IE.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3A6D111B8B296D00333490 /* UIView+IE.m */; };
 		BB3A6D161B8B29EA00333490 /* NSObject+IE.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3A6D151B8B29EA00333490 /* NSObject+IE.m */; };
+		BB3A6D1B1B8B2C4F00333490 /* UIColor+IE.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3A6D1A1B8B2C4F00333490 /* UIColor+IE.m */; };
+		BB3A6D1E1B8B2F5E00333490 /* UIFont+IE.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3A6D1D1B8B2F5E00333490 /* UIFont+IE.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		BB3A6D151B8B29EA00333490 /* NSObject+IE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IE.m"; sourceTree = "<group>"; };
 		BB3A6D171B8B2A1B00333490 /* Foundation+IE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Foundation+IE.h"; sourceTree = "<group>"; };
 		BB3A6D181B8B2A3400333490 /* UIKit+IE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKit+IE.h"; sourceTree = "<group>"; };
+		BB3A6D191B8B2C4F00333490 /* UIColor+IE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+IE.h"; sourceTree = "<group>"; };
+		BB3A6D1A1B8B2C4F00333490 /* UIColor+IE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+IE.m"; sourceTree = "<group>"; };
+		BB3A6D1C1B8B2F5E00333490 /* UIFont+IE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+IE.h"; sourceTree = "<group>"; };
+		BB3A6D1D1B8B2F5E00333490 /* UIFont+IE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+IE.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				BB3A6D171B8B2A1B00333490 /* Foundation+IE.h */,
+				BB3A6D191B8B2C4F00333490 /* UIColor+IE.h */,
+				BB3A6D1A1B8B2C4F00333490 /* UIColor+IE.m */,
+				BB3A6D1C1B8B2F5E00333490 /* UIFont+IE.h */,
+				BB3A6D1D1B8B2F5E00333490 /* UIFont+IE.m */,
 				BB3A6D141B8B29EA00333490 /* NSObject+IE.h */,
 				BB3A6D151B8B29EA00333490 /* NSObject+IE.m */,
 			);
@@ -188,10 +198,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB3A6CEC1B8AD73300333490 /* ViewController.m in Sources */,
+				BB3A6D1B1B8B2C4F00333490 /* UIColor+IE.m in Sources */,
 				BB3A6D121B8B296D00333490 /* UIView+IE.m in Sources */,
 				BB3A6CE91B8AD73300333490 /* AppDelegate.m in Sources */,
 				BB3A6CE61B8AD73300333490 /* main.m in Sources */,
 				BB3A6D161B8B29EA00333490 /* NSObject+IE.m in Sources */,
+				BB3A6D1E1B8B2F5E00333490 /* UIFont+IE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
