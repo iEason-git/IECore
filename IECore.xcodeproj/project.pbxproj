@@ -13,18 +13,8 @@
 		BB3A6CEF1B8AD73300333490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3A6CED1B8AD73300333490 /* Main.storyboard */; };
 		BB3A6CF11B8AD73300333490 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3A6CF01B8AD73300333490 /* Images.xcassets */; };
 		BB3A6CF41B8AD73300333490 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB3A6CF21B8AD73300333490 /* LaunchScreen.xib */; };
-		BB3A6D001B8AD73300333490 /* IECoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3A6CFF1B8AD73300333490 /* IECoreTests.m */; };
+		BB3A6D0E1B8B102300333490 /* NSObject+IE.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3A6D0D1B8B102300333490 /* NSObject+IE.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BB3A6CFA1B8AD73300333490 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BB3A6CD81B8AD73300333490 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BB3A6CDF1B8AD73300333490;
-			remoteInfo = IECore;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BB3A6CE01B8AD73300333490 /* IECore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IECore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +27,12 @@
 		BB3A6CEE1B8AD73300333490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB3A6CF01B8AD73300333490 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BB3A6CF31B8AD73300333490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		BB3A6CF91B8AD73300333490 /* IECoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IECoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB3A6CFE1B8AD73300333490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB3A6CFF1B8AD73300333490 /* IECoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IECoreTests.m; sourceTree = "<group>"; };
+		BB3A6D0C1B8B102300333490 /* NSObject+IE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IE.h"; sourceTree = "<group>"; };
+		BB3A6D0D1B8B102300333490 /* NSObject+IE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IE.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BB3A6CDD1B8AD73300333490 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BB3A6CF61B8AD73300333490 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				BB3A6CE21B8AD73300333490 /* IECore */,
-				BB3A6CFC1B8AD73300333490 /* IECoreTests */,
 				BB3A6CE11B8AD73300333490 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				BB3A6CE01B8AD73300333490 /* IECore.app */,
-				BB3A6CF91B8AD73300333490 /* IECoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +61,9 @@
 		BB3A6CE21B8AD73300333490 /* IECore */ = {
 			isa = PBXGroup;
 			children = (
+				BB3A6D0B1B8B0FAA00333490 /* Utils */,
+				BB3A6D0A1B8B0FAA00333490 /* UIKit+IE */,
+				BB3A6D091B8B0FAA00333490 /* Fundation+IE */,
 				BB3A6CE71B8AD73300333490 /* AppDelegate.h */,
 				BB3A6CE81B8AD73300333490 /* AppDelegate.m */,
 				BB3A6CEA1B8AD73300333490 /* ViewController.h */,
@@ -102,21 +85,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BB3A6CFC1B8AD73300333490 /* IECoreTests */ = {
+		BB3A6D091B8B0FAA00333490 /* Fundation+IE */ = {
 			isa = PBXGroup;
 			children = (
-				BB3A6CFF1B8AD73300333490 /* IECoreTests.m */,
-				BB3A6CFD1B8AD73300333490 /* Supporting Files */,
+				BB3A6D0C1B8B102300333490 /* NSObject+IE.h */,
+				BB3A6D0D1B8B102300333490 /* NSObject+IE.m */,
 			);
-			path = IECoreTests;
+			path = "Fundation+IE";
 			sourceTree = "<group>";
 		};
-		BB3A6CFD1B8AD73300333490 /* Supporting Files */ = {
+		BB3A6D0A1B8B0FAA00333490 /* UIKit+IE */ = {
 			isa = PBXGroup;
 			children = (
-				BB3A6CFE1B8AD73300333490 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "UIKit+IE";
+			sourceTree = "<group>";
+		};
+		BB3A6D0B1B8B0FAA00333490 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,24 +128,6 @@
 			productReference = BB3A6CE01B8AD73300333490 /* IECore.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BB3A6CF81B8AD73300333490 /* IECoreTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BB3A6D061B8AD73300333490 /* Build configuration list for PBXNativeTarget "IECoreTests" */;
-			buildPhases = (
-				BB3A6CF51B8AD73300333490 /* Sources */,
-				BB3A6CF61B8AD73300333490 /* Frameworks */,
-				BB3A6CF71B8AD73300333490 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BB3A6CFB1B8AD73300333490 /* PBXTargetDependency */,
-			);
-			name = IECoreTests;
-			productName = IECoreTests;
-			productReference = BB3A6CF91B8AD73300333490 /* IECoreTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +139,6 @@
 				TargetAttributes = {
 					BB3A6CDF1B8AD73300333490 = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					BB3A6CF81B8AD73300333490 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = BB3A6CDF1B8AD73300333490;
 					};
 				};
 			};
@@ -189,7 +156,6 @@
 			projectRoot = "";
 			targets = (
 				BB3A6CDF1B8AD73300333490 /* IECore */,
-				BB3A6CF81B8AD73300333490 /* IECoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +171,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB3A6CF71B8AD73300333490 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,28 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB3A6CEC1B8AD73300333490 /* ViewController.m in Sources */,
+				BB3A6D0E1B8B102300333490 /* NSObject+IE.m in Sources */,
 				BB3A6CE91B8AD73300333490 /* AppDelegate.m in Sources */,
 				BB3A6CE61B8AD73300333490 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB3A6CF51B8AD73300333490 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BB3A6D001B8AD73300333490 /* IECoreTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BB3A6CFB1B8AD73300333490 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BB3A6CDF1B8AD73300333490 /* IECore */;
-			targetProxy = BB3A6CFA1B8AD73300333490 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BB3A6CED1B8AD73300333490 /* Main.storyboard */ = {
@@ -363,40 +307,6 @@
 			};
 			name = Release;
 		};
-		BB3A6D071B8AD73300333490 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = IECoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IECore.app/IECore";
-			};
-			name = Debug;
-		};
-		BB3A6D081B8AD73300333490 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = IECoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IECore.app/IECore";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,14 +326,7 @@
 				BB3A6D051B8AD73300333490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		BB3A6D061B8AD73300333490 /* Build configuration list for PBXNativeTarget "IECoreTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BB3A6D071B8AD73300333490 /* Debug */,
-				BB3A6D081B8AD73300333490 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
