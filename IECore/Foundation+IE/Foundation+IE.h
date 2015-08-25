@@ -14,3 +14,15 @@
 #import "NSObject+IE.h"
 
 #endif
+
+#ifdef c__plusplus
+extern "c"{
+#endif
+    //生成随机数,endvalue > startValue
+    static inline NSInteger randomValueFrom(NSInteger startValue, NSInteger endValue)
+    {
+        return (NSInteger)(arc4random() % (endValue - startValue)) + startValue;
+    }
+#ifdef c__plusplus
+}
+#endif

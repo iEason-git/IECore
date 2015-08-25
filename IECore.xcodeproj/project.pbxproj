@@ -40,6 +40,8 @@
 		BB4B33211B8C11B8004FA8A0 /* UIColor+IE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+IE.m"; sourceTree = "<group>"; };
 		BB4B33221B8C11B8004FA8A0 /* UIFont+IE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+IE.h"; sourceTree = "<group>"; };
 		BB4B33231B8C11B8004FA8A0 /* UIFont+IE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+IE.m"; sourceTree = "<group>"; };
+		BB4B33261B8C1794004FA8A0 /* IECore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IECore.h; sourceTree = "<group>"; };
+		BB4B33271B8C17C4004FA8A0 /* IECommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IECommon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,8 @@
 		BB3A6CE21B8AD73300333490 /* IECore */ = {
 			isa = PBXGroup;
 			children = (
+				BB4B33261B8C1794004FA8A0 /* IECore.h */,
+				BB4B33271B8C17C4004FA8A0 /* IECommon.h */,
 				BB3A6D0B1B8B0FAA00333490 /* Utils */,
 				BB3A6D0A1B8B0FAA00333490 /* UIKit+IE */,
 				BB3A6D131B8B29EA00333490 /* Foundation+IE */,

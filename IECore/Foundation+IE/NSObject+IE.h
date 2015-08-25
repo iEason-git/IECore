@@ -21,12 +21,12 @@
 
 // send object
 // handle block with default identifier is @"sendObject".
-- (void)sendObject:(id)anObject;
 - (void)receiveObject:(void(^)(id object))aBlock;
+- (void)sendObject:(id)anObject;
 
 //tag can't be nil
-- (void)sendObject:(id)anObject withIdentifier:(NSString *)identifier;
 - (void)receiveObject:(void(^)(id object))aBlock withIdentifier:(NSString *)identifier;
+- (void)sendObject:(id)anObject withIdentifier:(NSString *)identifier;
 
 #pragma mark -
 #pragma mark # block

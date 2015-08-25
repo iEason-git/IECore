@@ -44,26 +44,14 @@
     objc_setAssociatedObject(self, identifier, obj, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)sendObject:(id)anObject
-{
-    [self sendObject:anObject withIdentifier:@"sendObject"];
-}
-
 - (void)receiveObject:(void(^)(id object))aBlock
 {
     [self receiveObject:aBlock withIdentifier:@"sendObject"];
 }
 
-- (void)sendObject:(id)anObject withIdentifier:(NSString *)identifier
+- (void)sendObject:(id)anObject
 {
-    NSAssert(identifier != nil, @"identifier can't be nil.");
-    
-    NSDictionary *dic = objc_getAssociatedObject(self, NSObject_key_objectDic);
-    
-    if(dic == nil) return;
-    
-    void(^aBlock)(id anObject) =  [dic objectForKey:identifier];
-    aBlock(anObject);
+    [self sendObject:anObject withIdentifier:@"sendObject"];
 }
 
 - (void)receiveObject:(void(^)(id object))aBlock withIdentifier:(NSString *)identifier
@@ -78,6 +66,18 @@
     }
     
     [dic setObject:[aBlock copy] forKey:identifier];
+}
+
+- (void)sendObject:(id)anObject withIdentifier:(NSString *)identifier
+{
+    NSAssert(identifier != nil, @"identifier can't be nil.");
+    
+    NSDictionary *dic = objc_getAssociatedObject(self, NSObject_key_objectDic);
+    
+    if(dic == nil) return;
+    
+    void(^aBlock)(id anObject) =  [dic objectForKey:identifier];
+    aBlock(anObject);
 }
 
 #pragma mark - block
