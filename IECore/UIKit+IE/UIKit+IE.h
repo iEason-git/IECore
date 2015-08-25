@@ -9,5 +9,8 @@
 #ifndef IECore_UIKit_IE_h
 #define IECore_UIKit_IE_h
 
+#import "UIView+IE.h"
+#import "UIFont+IE.h"
+#import "UIColor+IE.h"
 
 #endif

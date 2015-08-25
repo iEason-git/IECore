@@ -12,6 +12,5 @@
 #define IECore_Foundation_IE_h
 
 #import "NSObject+IE.h"
-#import "UIColor+IE.h"
 
 #endif
